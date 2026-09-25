@@ -86,8 +86,8 @@ git push -u origin main
    `YOUR-USERNAME.github.io`, and **A** records for the bare domain pointing to
    `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
 3. Once DNS updates (up to 24 hours), tick **Enforce HTTPS**.
-4. Replace `https://www.example.com/` in the `<head>` of all nine pages with the real
-   domain. Search each file for `example.com`.
+4. Replace `https://junearness.github.io/June-Arness-The-Artist/` in the `<head>` of all
+   nine pages with the new domain (canonical, og:url, og:image, twitter:image).
 
 Current instructions: https://docs.github.com/pages
 
