@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community | June Arness Official</title>
+  <meta name="description" content="Connect with June Arness and fellow fans in the community.">
+
+  <!-- ================================================================
+       DOMAIN: replace https://www.example.com/ with the real domain on
+       every page (canonical, og:url, og:image, twitter:image).
+       ================================================================ -->
+  <link rel="canonical" href="https://www.example.com/community.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="June Arness Official">
+  <meta property="og:title" content="Community | June Arness Official">
+  <meta property="og:description" content="Connect with June Arness and fellow fans in the community.">
+  <meta property="og:url" content="https://www.example.com/community.html">
+  <meta property="og:image" content="https://www.example.com/hero-performance.jpg">
+  <meta property="og:image:alt" content="June Arness performing on stage">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Community | June Arness Official">
+  <meta name="twitter:description" content="Connect with June Arness and fellow fans in the community.">
+  <meta name="twitter:image" content="https://www.example.com/hero-performance.jpg">
+
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-nav">
+    <nav aria-label="Primary">
+      <div class="container nav-bar">
+        <a class="logo" href="./index.html" aria-label="June Arness, home"><span class="logo-june">JUNE</span><span class="logo-arness">ARNESS</span></a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./music.html">Music</a></li>
+          <li><a href="./videos.html">Videos</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./xreative-xloud.html">The Xreative Xloud</a></li>
+          <li><a href="./community.html" aria-current="page">Community</a></li>
+          <li><a href="./submissions.html">Submit Music</a></li>
+          <li><a href="./partners.html">Partners</a></li>
+          <li><a href="./press.html">Press Kit</a></li>
+        </ul>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg class="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./music.html">Music</a></li>
+          <li><a href="./videos.html">Videos</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./xreative-xloud.html">The Xreative Xloud</a></li>
+          <li><a href="./community.html" aria-current="page">Community</a></li>
+          <li><a href="./submissions.html">Submit Music</a></li>
+          <li><a href="./partners.html">Partners</a></li>
+          <li><a href="./press.html">Press Kit</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page">
+    <div class="container container-3xl">
+      <div class="section-header reveal">
+        <h1 class="section-title">Community</h1>
+        <p class="section-subtitle">Connect with June Arness and fellow fans</p>
+        <div class="section-bar" aria-hidden="true"></div>
+      </div>
+
+      <!-- ==============================================================
+           COMMUNITY ENDPOINT
+           GitHub Pages can't store posts. Two honest options:
+           1. Moderated: connect a Formspree form. Posts are emailed to June's
+              team; approved ones get added to communityPosts in content.js.
+              Set action="https://formspree.io/f/YOUR_FORM_ID" below.
+           2. Live posting: needs a backend such as Supabase or Firebase
+              (see README). Not included in this static build.
+           With no action set, the Post button explains that posting isn't
+           connected yet and nothing is sent.
+           ============================================================== -->
+      <form class="panel" id="community-form" action="" method="POST" enctype="multipart/form-data" style="margin-bottom:2.5rem">
+        <input type="hidden" name="_subject" value="New community post (June Arness site)">
+        <label class="sr-only" for="post-name">Your name</label>
+        <input class="input" id="post-name" name="name" type="text" placeholder="Your name" autocomplete="name" style="margin-bottom:0.75rem">
+        <label class="sr-only" for="post-content">Your post</label>
+        <textarea class="textarea" id="post-content" name="content" placeholder="Share your thoughts with the community..." required></textarea>
+        <div class="attach-preview" id="attach-preview" hidden>
+          <img src="data:," alt="Selected image preview">
+          <button type="button" class="attach-remove" aria-label="Remove image">&times;</button>
+        </div>
+        <div class="composer-row">
+          <label class="icon-label" title="Add an image">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 5h6"/><path d="M19 2v6"/><path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/><circle cx="9" cy="9" r="2"/></svg><span class="sr-only">Add an image</span>
+            <input type="file" id="post-image" name="image" accept="image/*">
+          </label>
+          <button type="submit" class="btn btn-primary btn-display btn-xs"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg> Post</button>
+        </div>
+        <div id="community-notice" class="notice" role="status" aria-live="polite"></div>
+      </form>
+
+      <div class="post-list" id="post-list" aria-live="polite"><noscript><p class="empty-state">Turn on JavaScript to see this content.</p></noscript></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="./index.html" aria-label="June Arness, home"><span class="logo-june">JUNE</span><span class="logo-arness">ARNESS</span></a>
+          <p class="footer-blurb">Major Independent Recording Artist. Three projects released across all major streaming platforms.</p>
+        </div>
+        <nav aria-label="Footer: navigate">
+          <h2 class="footer-heading">Navigate</h2>
+          <ul class="footer-links">
+            <li><a href="./music.html">Music</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./community.html">Community</a></li>
+            <li><a href="./submissions.html">Submit Music</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer: connect">
+          <h2 class="footer-heading">Connect</h2>
+          <ul class="footer-links" id="connect-links">
+            <li><a href="./xreative-xloud.html">The Xreative Xloud</a></li>
+            <li><a href="./partners.html">Sponsors &amp; Partners</a></li>
+            <!-- Instagram and YouTube links are added from the site settings in content.js -->
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> JUNE ARNESS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./content.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
